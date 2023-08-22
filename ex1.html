@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Document</title>
+</head>
+<body>
+  <input type="button" value="hi" onclick="alert('hi')">
+  <input type="text" onchange="alert('changed')"><br>
+  <input type="text" onkeydown="alert('enter!')"><br>
+
+  <input type="botton" value="night" onclick="
+  document.querySelector('body').style.backgroundColor= 'black';
+  document.querySelector('body').style.
+  color= 'white';
+  " style="background-color: red;" ">
+   
+  <input type="botton" value="day" onclick="
+  document.querySelector('body').style.backgroundColor= 'white'
+  document.querySelector('body').style.color= 'black';
+  " style="background-color: blue;" >
+
+  abcdefghi<br>
+  <input id="nd" type="botton" value="night" onclick="
+  if(document.querySelector('#nd').value === 'night'){
+  document.querySelector('body').style.backgroundColor= 'black';
+  document.querySelector('body').style.
+  color= 'white';
+  document.querySelector('#nd').value = 'day';}
+  else {
+  document.querySelector('body').style.backgroundColor= 'white'
+  document.querySelector('body').style.color= 'black';document.querySelector('#nd').value = 'night'; }
+" style="background-color: blueviolet;">
+</body>
+</html>
