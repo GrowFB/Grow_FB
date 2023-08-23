@@ -26,12 +26,37 @@
 -->
 
   <div id="article">
-  <h2><a href="https://fuzzyline.co.kr/" target="_blank">Hide and seek</a>란 무엇인가</h2>
+  <h2><a href="https://fuzzyline.co.kr/" target="_blank">Hide and seek</a>란 무엇인가</h2><br>
+  <p>
+    <input  type="botton" value="night" onclick=" var target = document.querySelector('body');
+  if(this.value === 'night'){
+  target.style.backgroundColor= 'black';
+  target.style.color= 'white';
+  this.value = 'day';
+    var alist = document.querySelectorAll('a');
+      var i = 0;
+    while(i<alist.length){
+      console.log(alist[i]);
+      alist[i].style.color = 'powderblue';
+      i= i+1;}}
+  else {
+  target.style.backgroundColor= 'white'
+  target.style.color= 'black';this.value = 'night'; 
+  var alist = document.querySelectorAll('a');
+      var i = 0;
+    while(i<alist.length){
+      console.log(alist[i]);
+      alist[i].style.color = 'blue';
+      i= i+1;}}
+" style="background-color: blueviolet;"></p>
+
   <iframe width="560" height="315" src="https://www.youtube.com/embed/r8GG7j8LdTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
   <strong> hello <u>world</u></strong>
   <P style="margin-TOP:80px">SDJFLSJFD
     LSDJFLSDJF </P>
   <img src="cording.jpg" width="50%">
+  
+
   </div>
 </div>
 <div id="disqus_thread"></div>
