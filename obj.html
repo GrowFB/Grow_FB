@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+
+  <title></title>
+</head>
+<body>
+  <h1> object </h1>
+  <h2>create</h2>
+  <script>
+    var has = {
+      "programmer" : "abc",
+      "designer" : "efg"
+
+    };
+    document.write("programmer: " + has.programmer+"<br>");
+    document.write("designer: " + has.designer+"<br>");
+    has.bookkeeper = "klm" ;
+    document.write("bookkeeper: " + has.bookkeeper+"<br>");
+    has["data scientist"] = "hij";
+    document.write("data scientist: " + has["data scientist"]+"<br>");
+    </script>
+    <h2> iterate</h2>
+    <script>
+      for(var key in has){
+        document.write(key + ' : ' + has[key]+'<br>');
+      }
+    </script>
+    <h2> property & method </h2>
+    <script>
+      has.showall= function(){
+        for(var key in this){
+        document.write(key + ' : ' + this[key]+'<br>');
+      }
+      }
+      has.showall();
+      </script>
+</body>
+</html>
